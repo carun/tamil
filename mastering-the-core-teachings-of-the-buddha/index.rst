@@ -1,0 +1,26 @@
+புத்தரின் மைய போதனைகளை முழுமையாகக் கற்றறிதல்
+###############################################################
+
+இது `Dr. டேனியல் இங்ரம் <https://www.integrateddaniel.info/>`_ "Mastering the Core Teachings of the Buddha" என்ற பெயரில் எழுதி 2018ஆம் வெளியிட்ட ஆங்கில நூலின் தமிழாக்கம். `மூல ஆங்கில நூலைப் படிக்க விருப்பமுள்ளவர்கள் இங்கு சொடுக்கவும் <https://www.mctb.org/mctb2>`_. இந்நூலின் பதிப்புரிமை, காப்புரிமை மற்றும் அனைத்து உரிமமைகளும் `Dr. டேனியல் இங்ரமைச் <https://www.integrateddaniel.info/>`_ சாரும்.
+
+.. note::
+
+   இது வரைவு மட்டுமே. இன்னும் முழுமை அடையவில்லை.
+
+Table of Contents
+-----------------
+
+.. toctree::
+
+   credits
+   preface
+   dedication
+   foreword
+   part1-fundamentals
+   part2-light-shadows
+   part3-shamatha-jhanas
+   part4-insight
+   part5-awakening
+   part6-quest
+   final-wishes
+   last-words-of-wisdom
