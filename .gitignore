@@ -8,3 +8,4 @@ dist/
 .venv
 .swp
 .kate-swp
+*.kate-swp
