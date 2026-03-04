@@ -33,6 +33,14 @@
 
       விபஸ்ஸனா தியானத்தின் செயல்முறை பற்றிய நூல்.
 
+   .. grid-item-card:: திருக்குறளில் ஆன்மீகம்
+      :link: spirituality-in-tirukkural/index
+      :link-type: doc
+
+      *Spirituality in Tirukkural* — Arun Chandrasekaran
+
+      திருக்குறளின் ஆன்மீகப் பரிமாணங்களை ஆராயும் நூல்.
+
    .. grid-item-card:: சொற்களஞ்சியம்
       :link: glossary/index
       :link-type: doc
@@ -44,4 +52,5 @@
 
    mastering-the-core-teachings-of-the-buddha/index
    process-of-insight-meditation/index
+   spirituality-in-tirukkural/index
    glossary/index
