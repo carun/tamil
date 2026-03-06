@@ -33,11 +33,11 @@
 
       விபஸ்ஸனா தியானத்தின் செயல்முறை பற்றிய நூல்.
 
-   .. grid-item-card:: சொற்களஞ்சியம்
+   .. grid-item-card:: சொல்லாய்வு
       :link: glossary/index
       :link-type: doc
 
-      சொற்களஞ்சியம்
+      சொல்லாய்வு
 
 .. toctree::
    :hidden:
