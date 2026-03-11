@@ -27,112 +27,109 @@ Mindfulness meditation என்பதற்கு பாளியில் sati
 
 வேதனை என்ற சொல்லின் வேர் சமஸ்கிருததிலும் பாளியிலும் உள்ளது. உண்மையில் வேதனை என்றால் "உணர்வு" என்று மட்டுமே பொருள்.  ஆங்கிலத்தில் sensation, feeling. துக்க/துயர/சோக உணர்வு என்று அதன் பொருள் தமிழில் முற்றிலும் தவராகத் திரிந்துள்ளது.
 
-Vēdanā (वेदना / vēdanā) comes from the Sanskrit verbal root: vid / ved (विद् / वेद्).
+வேதனை (वेदना / vēdanā) என்ற சொல், சமஸ்கிருத வினைச்சொல் வேரான 'வித் / வேத் (विद् / वेद्)' என்பதிலிருந்து வருகிறது.
 
-Root
------
+வேர்ச்சொல்
+-----------
 
-vid = "to know, perceive, feel, experience"
+வித் (vid) = "அறிதல், உணர்தல், அனுபவித்தல்"
 
-From this root we get:
+இந்த வேர்ச்சொல்லிலிருந்து நாம் பெறுபவை:
 
-* vēda: knowledge
-* vēdayati: to make known, to cause to feel
-* vēdanā: that which is felt or experienced
+* வேத (वेद): அறிவு
+* வேதயதி (वेदयति): அறியப்படுத்துதல், உணரச் செய்தல்
+* வேதனா (वेदना): உணரப்பட்ட அல்லது அனுபவிக்கப்பட்டது
 
-Morphology
-----------
+இலக்கண அமைப்பு
+-------------------
 
-* vēd (to feel/know)
-* -anā (abstract noun suffix indicating a process or state)
+* வேத (உணர்தல்/அறிதல்)
+* -னா (ஒரு செயல் அல்லது நிலையைக் குறிக்கும் அருவப் பெயர்ச்சொல் விகுதி)
 
-So vēdanā literally means "the act/state of feeling or experiencing". In Buddhist/Pāli usage Vēdanā, it specifically refers to the felt tone of experience, not emotion.
+எனவே, வேதனை என்பதன் நேரடிப் பொருள் "உணர்வதன் / அனுபவிப்பதன் செயல் / நிலை" என்பதாகும். பௌத்த பாளி பயன்பாட்டில், வேதனை என்பது குறிப்பாக அனுபவத்தின் உணர்வுத் தொனியைக் குறிக்கிறது, உணர்ச்சியை அல்ல.
 
-Three types of vēdanā:
+மூன்று வகையான வேதனைகள்:
 
-* dukkha vēdanā: unpleasant feeling
-* sukha vēdanā: pleasant feeling
-* adukkhamasukha vēdanā: neutral feeling
+* துக்க வேதனை: விரும்பத்தகாத உணர்வு
+* சுக வேதனை: விரும்பத்தக்க உணர்வு
+* அத்துக்கமசுக வேதனை: நடுநிலை உணர்வு
 
-Originally the word meant "feeling / sensation produced by contact". In early Buddhism, phassa (contact) -> vēdanā (feeling tone) -> taṇhā (craving). This chain appears in Pratītyasamutpāda.
+முதலில் இந்தச் சொல்லுக்கு "தொடர்ச்சியால் ஏற்படும் உணர்வு / அறிகுறி" என்று பொருள். ஆரம்பகாலப் பௌத்தத்தில், பஸ்ஸா (தொடர்பு) -> வேதனா (உணர்வின் தன்மை) -> தன்ஹா (ஆசை) என இந்தத் தொடர் காணப்படுகிறது. இந்தச் சங்கிலிப் பிணைப்பு பிரதிட்டைசமுத்பாதத்தில் தோன்றுகிறது.
 
-So vēdanā ≈ the immediate felt quality of experience.
+எனவே, வேதனா ≈ அனுபவத்தின் உடனடி உணரப்படும் தன்மை.
+
 
 3. ஸ்கந்த/Skandha
 ===================
 
-Skandha (स्कन्ध / skandha) comes from the Sanskrit root skand (स्कन्द्).
+ஸ்கந்த (स्कन्ध / skandha) என்ற சொல், சமஸ்கிருத மூலச்சொல்லான ஸ்கந்த் (स्कन्द्) என்பதிலிருந்து வந்தது.
 
-Root
-------
+வேர்ச்சொல்
+-----------
 
-skand =
+ஸ்கந்த் =
 
-* to leap, spring, pour out, spill, emanate
-* to burst forth or spread
+* துள்ளுதல், பாய்தல், பொழிதல், சிந்துதல், வெளிப்படுதல்
+* வெடித்து வெளிவருதல் அல்லது பரவுதல்
 
-Original meanings of skandha
+ஸ்கந்தத்தின் மூலப் பொருட்கள்
 -----------------------------
 
-In early Sanskrit usage, skandha meant:
+ஆதி சமஸ்கிருதப் பயன்பாட்டில், ஸ்கந்தம் என்பதற்குப் பின்வரும் பொருட்கள் இருந்தன:
 
-1. Trunk of a tree
-2. Main body or mass
-3. Heap / aggregate / collection
-4. Shoulder or upper body
+1. மரத்தின் தண்டு
+2. முக்கிய உடல் அல்லது திரள்
+3. குவியல் / திரள் / தொகுப்பு
+4. தோள் அல்லது உடலின் மேற்பகுதி
 
-The semantic idea is something that branches or emerges from a base, like a tree trunk from which parts extend.
+ஒரு மரத்தின் அடிமரத்திலிருந்து அதன் பாகங்கள் பரவுவது போல, ஒரு அடிப்பகுதியிலிருந்து கிளைத்து வெளிப்படும் அல்லது உருவாகும் ஒன்றையே இது குறிக்கிறது.
 
-In Buddhism, Skandha (பாளி: கந்த)  means "aggregates" or "bundles" that make up what we call a person.
+பௌத்த மதத்தில், ஸ்கந்தம் (பாலி: கந்த) என்பது நாம் மனிதன் என்று அழைப்பதை உருவாக்கும் "கூறுகள்" அல்லது "கட்டுகள்" என்பதாகும்.
 
-The five aggregates are:
+ஐந்து தொகுப்புகள்:
 
-1. rūpa: form/body
-2. vēdanā: feeling tone
-3. saññā / saṃjñā: perception
-4. saṅkhāra / saṃskāra: mental formations
-5. viññāṇa / vijñāna: consciousness
+1. ரூபம்: வடிவம்/உடல்
+2. வேதனை: உணர்வு நிலை
+3. சன்னியா / சஞ்ச்ஞா: பிரதிமை
+4. சங்கார / சம்பஸ்கார: மன உருவாக்கங்கள்
+5. விஞ்ஞான / விஜ்ஞான: அறிவு
 
-So skandha = heap, bundle, aggregate of processes.
+எனவே, கட்டு = செயல்முறைகளின் திரள், தொகுப்பு.
 
-Think of skandha not as not a permanent entity, but as:
+ஸ்கந்தத்தை ஒரு நிரந்தரமான அலகாகக் கருதாமல், பின்வருமாறு கருதுங்கள்:
 
-* a pile
-* a bundle
-* a collection
-* a cluster of processes
+* ஒரு குவியலாக
+* ஒரு தொகுப்பாக
+* ஒரு சேர்க்கையாக
+* செயல்முறைகளின் திரளாக
 
-The metaphor likely comes from "tree trunk -> large mass -> heap -> aggregate".
+இந்த உருவகம் **மரக்கட்டை -> பெரிய திரள் -> குவியல் -> திரள்** என்பதிலிருந்து வந்திருக்கலாம்.
 
-So pañca-skandha literally means "five heaps/bundles (that constitute what we call a person)." Closest conceptual translations in Tamil equivalent would be
+எனவே, பஞ்சஸ்கந்தம் என்பதற்குச் சொல்லகராதிப்படி "நாம் மனிதர் என்று அழைப்பதற்குக் காரணமான ஐந்து குவியல்கள்/தொகுப்புகள்" என்று பொருள். இதற்கான மிக நெருங்கிய கருத்தியல் சமமான தமிழ்ச்சொற்கள்
 
-* தொகுப்பு: aggregate
-* அமைப்புக் கூறுகள்: structural components
-* கூட்டு
+முருகப் பெருமானின் பெயராக ஸ்கந்தம் என்ற வார்த்தையின் பயன்பாடு, தத்துவத்தை விட மொழிவியல் மற்றும் வரலாற்று சார்ந்தது.
 
-Usage of the word Skanda as the name of Lord Murugan relates more liguistical and historical than philosophical.
+முந்தைய விளக்கத்தின்படி, ஸ்கந்தம் என்பதற்கு நேரடி அர்த்தம்:
 
-With previous explanation, Skanda literally means:
+* "வெடித்து வெளி வந்தவர்"
+* "தெறித்து வெளி வந்தவர்"
 
-* "the one who sprang forth"
-* "the one who burst out"
+இது அவருடைய பிறப்புப் புராணத்தைக் குறிக்கிறது, அதில் அவர் சிவனின் வித்து/நெருப்பிலிருந்து திடீரென வெளிவந்து, பின்னர் கிருத்திகா நட்சத்திரங்களால் வளர்க்கப்பட்டார். தமிழ் ஒலியியல், சமஸ்கிருத ஒலிக்குழுக்களான sk -> k என எளியதாக்கும்.
 
-This refers to the myth of his birth, where he emerges suddenly from Śiva's seed/fire and is later nurtured by the Kṛttikā stars. Tamil phonology often simplifies Sanskrit clusters such as: sk -> k
-
-Examples:
+எடுத்துக்காட்டுகள்:
 
 * skanda -> kanda
 * skandapurāṇa -> kandapurāṇam
 
-Doctrinal significance
-----------------------
+கோட்பாட்டு முக்கியத்துவம்
+--------------------------
 
-The skandha doctrine dismantles the illusion of a permanent "I" Each aggregate arises and passes away through dependent origination. Clinging (upādāna) to any of them leads to dukkha (suffering). Insight meditation examines their transient nature, loosening attachment and paving the way toward nirvāṇa.
+ஸ்கந்தக் கோட்பாடு ஒரு நிரந்தர "நான்" என்ற மாயையை அகற்றுகிறது. ஒவ்வொரு திரளும் சார்புநிலை தோற்றத்தின் மூலம் எழுகிறது மற்றும் அழிந்துவிடுகிறது. அவற்றில் எதற்கும் பற்றுதல் (உபாதானம்) துக்கத்திற்கு (துன்பம்) வழிவகுக்கிறது. ஞானப் பயிற்சி அவற்றின் நிலையற்ற தன்மையை ஆராய்ந்து, பற்றைத் தளர்த்தி, நிர்வாணத்தை நோக்கிய பாதையைத் திறக்கிறது.
 
-Symbolism and insight
-----------------------
+சின்னவியல் (Symbolism) மற்றும் ஞானம்
+-------------------------------------
 
-Metaphors such as the "chariot" from the Saṃyutta Nikāya illustrate that the self exists only as a conventional designation upon the aggregates—just as a chariot exists only in dependence on its parts. Realization of this interdependence is central to Buddhist insight and the cessation of ego-based suffering.
+சம்யுத்த நிகாயத்தில் உள்ள "தேர்" போன்ற உருவகங்கள், ஒரு தேர் அதன் பாகங்களைச் சார்ந்திருப்பதைப் போலவே, ஆன்மா என்பது தொகுப்புகளின் மீது உள்ள ஒரு மரபார்ந்த பெயரிடலாக மட்டுமே உள்ளது என்பதை விளக்குகின்றன. இந்த பரஸ்பர சார்புநிலையை உணர்தல், பௌத்த ஞானத்திற்கும், அஹங்கார அடிப்படையிலான துன்பங்கள் நீக்குவதற்கும் மையமாக அமைகிறது.
 
 4. Shamatha / சமாதா
 ===========================
@@ -159,7 +156,7 @@ Metaphors such as the "chariot" from the Saṃyutta Nikāya illustrate that the 
 5. Vipassanā/விபஸ்ஸனா
 ===========================
 
-விபஸ்ஸனா (பாளி) அல்லது விபஷனா (சமஸ்கிருதம்) ஆகியவை வி- ("சிறப்பு", "தீவிரம்", "தனி", அல்லது "தூரம்") என்ற முன்னொட்டு மற்றும் பாஷ் ("பார்க்க" அல்லது "நோக்க") என்ற வினைமூலத்திலிருந்து உருவானவை. இது பொதுவாக "உள்ளறிவு," "தெளிவான பார்வை," அல்லது "மேலான பார்வை" என்று மொழிபெயர்க்கப்படுகிறது. இது யதார்த்தத்தின் நேரடி, அனுபவபூர்வமான உணர்வைக் குறிக்கிறது, குறிப்பாக மனதின் மற்றும் உடலின் நிலையற்ற தன்மையை.
+விபஸ்ஸனா (பாளி) அல்லது விபஷனா (சமஸ்கிருதம்) ஆகியவை வி- ("சிறப்பு", "தீவிரம்", "தனி", அல்லது "தூரம்") என்ற முன்னொட்டு மற்றும் பாஷ் ("பார்க்க" அல்லது "நோக்க") என்ற வினைமூலத்திலிருந்து உருவானவை. இது பொதுவாக "உள்ளறிவு," "தெளிவான பார்வை," அல்லது "மேலான பார்வை" என்று மொழிபெயர்க்கப்படுகிறது. இது யதார்த்தத்தின் நேரடி, அனுபவபூர்வமான உணர்வைக் குறிக்கிறது, குறிப்பாக மனதின் மற்றும் உடலின் நிலையற்ற தன்மையை. பஸ்ஸனா என்றால் ஆழ்ந்த ஒருமுகப்பாட்டின் மூலம் சரியான புரிதல் அல்லது உணர்தல், அல்லது மன மற்றும் உடல் சார்ந்த இந்த மூன்று பண்புகளைப் பற்றிய சரியான புரிதல் என்பதாகும். தியானிக்கும்போது ஆறு புலன்களிலும் (மனதுடன் சேர்த்து ஆறு புலன்கள்) கவனம் செலுத்துவதால் தமிழில் விபஸ்ஸனாவிற்கு **"அறுபுலன் தியானம்"** என்றொரு சொல்லை பரிந்துறைக்கிறேன். கூர்ந்து உள்நோக்குவதால் **"உள்கூர்நோக்கல்"** தியானம் என்றும் பரிந்துறைக்கிறேன். இவற்றில் தவறு இருந்தால் திருத்தவும்.
 
 சொல் தோற்றப் பகுப்பாய்வு
 -------------------------------
