@@ -2,11 +2,14 @@
 """Build PDF from RST book sources via pandoc (RST→Typst) and typst compile."""
 
 import argparse
+import base64
+import json
 import os
 import re
 import subprocess
 import sys
 import tempfile
+import urllib.request
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -41,6 +44,36 @@ DOC_ROLE_RE = re.compile(r":doc:`(?:([^<`]+?)\s*<[^>]+>|([^`]+))`")
 # Regex for :layout: field list
 LAYOUT_RE = re.compile(r"^:layout:.*\n", re.MULTILINE)
 
+# Regex for .. mermaid:: directives — render via mermaid.ink for PDF
+# Matches the directive and all indented content (including blank lines within the block)
+MERMAID_RE = re.compile(
+    r"^\.\. mermaid::.*\n(?:[ \t]+:.*\n)*\n?((?:(?:[ \t]+.*|[ \t]*)?\n)*?)(?=\n\S|\Z)",
+    re.MULTILINE,
+)
+
+# Counter for mermaid image filenames
+_mermaid_counter = 0
+
+
+def render_mermaid_to_image(diagram: str, book_dir: Path) -> str | None:
+    """Render a mermaid diagram to PNG via mermaid.ink (Chromium-based, supports Tamil fonts)."""
+    global _mermaid_counter
+    _mermaid_counter += 1
+    # Use JSON API with explicit width for higher resolution (arrows visible at PDF scale)
+    state = json.dumps({"code": diagram, "mermaid": {"theme": "default"}})
+    encoded = base64.urlsafe_b64encode(state.encode("utf-8")).decode("ascii")
+    url = f"https://mermaid.ink/img/{encoded}?type=png&width=2000"
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "build_pdf/1.0"})
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            img_data = resp.read()
+        img_path = book_dir / f"_mermaid_{_mermaid_counter}.png"
+        img_path.write_bytes(img_data)
+        return str(img_path.name)
+    except Exception as e:
+        print(f"  Warning: mermaid.ink render failed: {e}")
+        return None
+
 
 def parse_toctree(index_path: Path, book_dir: Path) -> list[tuple[Path, int]]:
     """Recursively walk toctree from index_path, returning (filepath, depth) tuples."""
@@ -67,7 +100,7 @@ def _walk_toctree(rst_path: Path, book_dir: Path, depth: int, result: list):
                 _walk_toctree(child_path, book_dir, depth + 1, result)
 
 
-def preprocess_rst(content: str) -> str:
+def preprocess_rst(content: str, book_dir: Path = None) -> str:
     """Strip Sphinx-specific directives from RST content."""
     # Remove toctree directives
     content = TOCTREE_RE.sub("", content)
@@ -75,6 +108,21 @@ def preprocess_rst(content: str) -> str:
     content = DOC_ROLE_RE.sub(lambda m: f"*{m.group(1) or m.group(2)}*", content)
     # Remove :layout: field lists
     content = LAYOUT_RE.sub("", content)
+    # Render mermaid diagrams via mermaid.ink API → PNG images
+    def _replace_mermaid(match):
+        diagram = match.group(1)
+        if not diagram.strip():
+            return ""
+        # Dedent the diagram content
+        lines = diagram.rstrip().splitlines()
+        indent = min(len(line) - len(line.lstrip()) for line in lines if line.strip())
+        diagram = "\n".join(line[indent:] for line in lines)
+        if book_dir:
+            img_name = render_mermaid_to_image(diagram, book_dir)
+            if img_name:
+                return f".. image:: {img_name}\n   :align: center\n\n"
+        return ""
+    content = MERMAID_RE.sub(_replace_mermaid, content)
     return content
 
 
@@ -193,7 +241,7 @@ def build_book(
     parts = []
     for filepath, depth in files:
         content = filepath.read_text(encoding="utf-8")
-        content = preprocess_rst(content)
+        content = preprocess_rst(content, book_dir)
         if depth == 0:
             # Strip all headings from the root index file
             content = HEADING_RE.sub(lambda m: "", content)
@@ -253,6 +301,9 @@ def build_book(
     finally:
         rst_tmp.unlink(missing_ok=True)
         typst_tmp.unlink(missing_ok=True)
+        # Clean up generated mermaid PNGs
+        for img in book_dir.glob("_mermaid_*.png"):
+            img.unlink(missing_ok=True)
 
 
 def main():

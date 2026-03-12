@@ -16,6 +16,7 @@ extensions = [
     "sphinx.ext.duration",
     "sphinx.ext.intersphinx",
     "sphinx_new_tab_link",
+    "sphinxcontrib.mermaid",
 ]
 
 intersphinx_mapping = {
@@ -38,6 +39,9 @@ html_context = {
 }
 html_static_path = ["_static"]
 html_css_files = ["custom.css"]
+
+# -- Mermaid diagrams
+mermaid_output_format = "raw"
 
 # -- Options for EPUB output
 epub_show_urls = "footnote"
