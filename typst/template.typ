@@ -53,12 +53,6 @@
   set text(lang: lang, region: region, font: font, size: fontsize)
   set heading(numbering: sectionnumbering)
 
-  // Highlight hyperlinks with a subtle blue color and underline
-  show link: it => {
-    set text(fill: rgb("#2155a8"))
-    underline(offset: 2pt, stroke: 0.5pt + rgb("#2155a8"), it)
-  }
-
   // Chapter headings — 17pt bold, large spacing
   show heading.where(level: 1): it => {
     pagebreak(weak: true)
@@ -104,11 +98,22 @@
     ]
   }
 
-  // Table of contents — roman numerals, no header
+  // Table of contents — roman numerals, no header, blue page numbers
   page(numbering: "i", header: none)[
     #set text(size: 11.96pt)
+    #show outline.entry: it => link(it.element.location(), it.indented(it.prefix(), {
+      it.body()
+      box(width: 1fr, it.fill)
+      text(fill: rgb("#2155a8"))[#it.page()]
+    }))
     #outline(depth: 3, indent: 1.5em, title: none)
   ]
+
+  // Highlight hyperlinks with a subtle blue color and underline (after TOC)
+  show link: it => {
+    set text(fill: rgb("#2155a8"))
+    underline(offset: 2pt, stroke: 0.5pt + rgb("#2155a8"), it)
+  }
 
   if cols == 1 { doc } else { columns(cols, doc) }
 }
