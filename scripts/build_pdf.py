@@ -121,10 +121,12 @@ def normalize_headings(content: str, depth_offset: int) -> str:
         title_len = max(len(title), 3)
         underline = char * title_len
 
-        if heading["has_overline"]:
-            replacement = f"{underline}\n{title}\n{underline}"
-        else:
-            replacement = f"{title}\n{underline}"
+        # Always use underline-only style so that all headings at the
+        # same target level use the same RST convention — pandoc determines
+        # heading depth by first-seen (char, style) pair, so mixing
+        # overlined and underline-only with the same char creates two
+        # separate levels.
+        replacement = f"{title}\n{underline}"
 
         content = content[: match.start()] + replacement + content[match.end() :]
 
