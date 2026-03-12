@@ -9,6 +9,21 @@ build:
   os: ubuntu-lts-latest
   tools:
     python: '3.12'
+  apt_packages:
+    - pandoc
+  jobs:
+    pre_build:
+      # Install typst
+      - curl -sL https://github.com/typst/typst/releases/latest/download/typst-x86_64-unknown-linux-musl.tar.xz | tar xJ --strip-components=1 -C /tmp
+      # Download fonts
+      - mkdir -p fonts
+      - curl -sL "https://github.com/notofonts/tamil/releases/download/NotoSansTamil-v2.004/NotoSansTamil-v2.004.zip" -o /tmp/tamil.zip && unzip -jo /tmp/tamil.zip "NotoSansTamil/unhinted/ttf/*.ttf" -d fonts/
+      - curl -sL "https://github.com/notofonts/latin-greek-cyrillic/releases/download/NotoSans-v2.015/NotoSans-v2.015.zip" -o /tmp/sans.zip && unzip -jo /tmp/sans.zip "NotoSans/unhinted/ttf/NotoSans-Regular.ttf" "NotoSans/unhinted/ttf/NotoSans-Bold.ttf" -d fonts/
+    post_build:
+      # Build PDFs and copy into HTML output
+      - PATH="/tmp:$PATH" make pdf
+      - mkdir -p $READTHEDOCS_OUTPUT/html/_static/pdf
+      - cp _build/pdf/*.pdf $READTHEDOCS_OUTPUT/html/_static/pdf/
 
 python:
   install:
