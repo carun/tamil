@@ -1,49 +1,22 @@
-:layout: landing
-
 தியான நூல்களின் தமிழாக்கம்
 ##################################
 
 தியான நூல்களின் தமிழ் மொழிபெயர்ப்புகள்.
 
-.. container:: buttons
+.. list-table::
+   :widths: 70 30
+   :header-rows: 1
 
-   `GitHub <https://github.com/carun/tamil>`_
-
-----
-
-நூல்கள்
--------
-
-.. grid:: 1 2 2 2
-   :gutter: 3
-
-   .. grid-item-card:: புத்தரின் மைய போதனைகளை முழுமையாகக் கற்றறிதல்
-      :link: mastering-the-core-teachings-of-the-buddha/index
-      :link-type: doc
-
-      *Mastering the Core Teachings of the Buddha* — Dr. Daniel M. Ingram
-
-      தியான பயிற்சி, ஞான நிலைகள், ஜானா நிலைகள் மற்றும் விழிப்புணர்வு பற்றிய விரிவான வழிகாட்டி.
-
-      `PDF பதிவிறக்கம் <_static/pdf/mctb.pdf>`_
-
-   .. grid-item-card:: ஆழ்ந்தறிவு தியானத்தின் செயல்முறை
-      :link: process-of-insight-meditation/index
-      :link-type: doc
-
-      *The Process of Insight Meditation* — Sayadaw Janakābhivamsa
-
-      விபஸ்ஸனா தியானத்தின் செயல்முறை பற்றிய நூல்.
-
-      `PDF பதிவிறக்கம் <_static/pdf/pim.pdf>`_
-
-   .. grid-item-card:: சொல்லாய்வு
-      :link: glossary/index
-      :link-type: doc
-
-      சொல்லாய்வு
-
-      `PDF பதிவிறக்கம் <_static/pdf/glossary.pdf>`_
+   * - நூல்
+     - PDF
+   * - :doc:`புத்தரின் மைய போதனைகளை முழுமையாகக் கற்றறிதல் <mastering-the-core-teachings-of-the-buddha/index>`
+       — *Mastering the Core Teachings of the Buddha* — Dr. Daniel M. Ingram
+     - `பதிவிறக்கம் <_static/pdf/mctb.pdf>`_
+   * - :doc:`ஆழ்ந்தறிவு தியானத்தின் செயல்முறை <process-of-insight-meditation/index>`
+       — *The Process of Insight Meditation* — Sayadaw Janakābhivamsa
+     - `பதிவிறக்கம் <_static/pdf/pim.pdf>`_
+   * - :doc:`சொல்லாய்வு <glossary/index>`
+     - `பதிவிறக்கம் <_static/pdf/glossary.pdf>`_
 
 .. toctree::
    :hidden:

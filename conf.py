@@ -16,7 +16,6 @@ extensions = [
     "sphinx.ext.duration",
     "sphinx.ext.intersphinx",
     "sphinx_new_tab_link",
-    "sphinx_design",
 ]
 
 intersphinx_mapping = {
@@ -31,6 +30,11 @@ exclude_patterns = ["_build", "_templates", "README.rst", "*/README.rst", "*/TOD
 
 # -- Options for HTML output
 html_theme = "shibuya"
+html_context = {
+    "source_type": "github",
+    "source_user": "carun",
+    "source_repo": "tamil",
+}
 html_static_path = ["_static"]
 html_css_files = ["custom.css"]
 
