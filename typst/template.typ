@@ -36,11 +36,25 @@
   region: "IN",
   font: ("New Computer Modern", "Noto Sans Tamil"),
   fontsize: 10.91pt,
-  
+  translator: none,
   sectionnumbering: none,
   pagenumbering: "1",
   doc,
 ) = {
+  // Embed PDF metadata (strip email from translator for properties)
+  {
+    let a = ()
+    if translator != none and translator != "" {
+      let name = translator
+      let idx = name.position("<")
+      if idx != none { name = name.slice(0, idx).trim() }
+      a.push(name)
+    }
+    set document(
+      title: if title != none { title } else { "" },
+      author: a,
+    )
+  }
   set page(
     paper: paper,
     margin: margin,
@@ -95,6 +109,9 @@
         }
       ]
       #v(2fr)
+      #if translator != none and translator != "" {
+        align(center, text(size: 10pt)[தமிழாக்கம்: #translator])
+      }
     ]
   }
 
@@ -154,6 +171,9 @@ $if(mainfont)$
 $endif$
 $if(fontsize)$
   fontsize: $fontsize$,
+$endif$
+$if(translator)$
+  translator: "$translator$",
 $endif$
   pagenumbering: $if(page-numbering)$"$page-numbering$"$else$"1"$endif$,
   cols: $if(columns)$$columns$$else$1$endif$,

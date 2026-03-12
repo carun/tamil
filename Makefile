@@ -27,21 +27,26 @@ $(BOOKS):
 # Build PDFs via pandoc + typst
 pdf: pdf-mctb pdf-pim pdf-glossary
 
+TRANSLATOR = Arun Chandrasekaran <visionofarun@gmail.com>
+
 pdf-mctb:
 	python3 scripts/build_pdf.py mastering-the-core-teachings-of-the-buddha \
 		--title "புத்தரின் மைய போதனைகளை முழுமையாகக் கற்றறிதல்" \
 		--author "Dr. Daniel M. Ingram" \
+		--translator "$(TRANSLATOR)" \
 		--output $(BUILDDIR)/pdf/mctb.pdf
 
 pdf-pim:
 	python3 scripts/build_pdf.py process-of-insight-meditation \
 		--title "விபஸ்ஸனா தியானத்தின் செயல்முறை" \
 		--author "Sayadaw Janakābhivamsa" \
+		--translator "$(TRANSLATOR)" \
 		--output $(BUILDDIR)/pdf/pim.pdf
 
 pdf-glossary:
 	python3 scripts/build_pdf.py glossary \
 		--title "சொல்லாய்வு" \
+		--author "Arun Chandrasekaran" \
 		--output $(BUILDDIR)/pdf/glossary.pdf
 
 clean:

@@ -170,7 +170,7 @@ def postprocess_typst(content: str) -> str:
 
 
 def build_book(
-    book_dir: Path, title: str, author: str, output_path: Path
+    book_dir: Path, title: str, author: str, output_path: Path, translator: str = ""
 ) -> None:
     """Build a PDF for a single book."""
     index_path = book_dir / "index.rst"
@@ -227,6 +227,7 @@ def build_book(
             "--template", str(TYPST_TEMPLATE),
             "--variable", f"title={title}",
             "--variable", f"author={author}",
+            "--variable", f"translator={translator}",
             "-o", str(typst_tmp),
             str(rst_tmp),
         ]
@@ -259,6 +260,7 @@ def main():
     parser.add_argument("book_dir", help="Book directory (relative to project root)")
     parser.add_argument("--title", required=True, help="Book title")
     parser.add_argument("--author", default="", help="Book author")
+    parser.add_argument("--translator", default="", help="Translator name")
     parser.add_argument("--output", required=True, help="Output PDF path")
     args = parser.parse_args()
 
@@ -267,7 +269,7 @@ def main():
     if not output_path.is_absolute():
         output_path = PROJECT_ROOT / output_path
 
-    build_book(book_dir, args.title, args.author, output_path)
+    build_book(book_dir, args.title, args.author, output_path, args.translator)
 
 
 if __name__ == "__main__":
