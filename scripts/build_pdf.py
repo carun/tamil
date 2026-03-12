@@ -141,6 +141,31 @@ def postprocess_typst(content: str) -> str:
     content = content.replace("\\'", "'")
     # Escape / at start of lines to prevent Typst term list interpretation
     content = re.sub(r"^/ ", r"\/\ ", content, flags=re.MULTILINE)
+
+    # Split grouped blockquotes into individual ones.
+    # Pandoc merges consecutive RST block quotes into a single #blockquote[...].
+    # We split on attribution lines (-- ...) so each quote gets its own border.
+    def split_blockquote(m):
+        body = m.group(1)
+        # Split after each attribution line (-- ...)
+        chunks = re.split(r"(^-- .+$)", body, flags=re.MULTILINE)
+        if len(chunks) <= 1:
+            return m.group(0)
+        quotes = []
+        current = ""
+        for chunk in chunks:
+            current += chunk
+            if re.match(r"^-- ", chunk):
+                quotes.append(current.strip())
+                current = ""
+        if current.strip():
+            quotes.append(current.strip())
+        return "\n\n".join(f"#blockquote[\n{q}\n]" for q in quotes if q)
+
+    content = re.sub(
+        r"#blockquote\[\n(.*?)\n\]", split_blockquote, content, flags=re.DOTALL
+    )
+
     return content
 
 
