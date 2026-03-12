@@ -10,9 +10,11 @@ build:
   tools:
     python: '3.12'
   apt_packages:
-    - pandoc
+    - unzip
   jobs:
     pre_build:
+      # Install pandoc 3.x (apt version is too old, lacks Typst support)
+      - curl -sL https://github.com/jgm/pandoc/releases/download/3.9/pandoc-3.9-linux-amd64.tar.gz | tar xz --strip-components=2 -C /tmp
       # Install typst
       - curl -sL https://github.com/typst/typst/releases/latest/download/typst-x86_64-unknown-linux-musl.tar.xz | tar xJ --strip-components=1 -C /tmp
       # Download fonts

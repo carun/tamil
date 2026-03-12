@@ -25,6 +25,8 @@
 
       தியான பயிற்சி, ஞான நிலைகள், ஜானா நிலைகள் மற்றும் விழிப்புணர்வு பற்றிய விரிவான வழிகாட்டி.
 
+      `PDF பதிவிறக்கம் <_static/pdf/mctb.pdf>`_
+
    .. grid-item-card:: ஆழ்ந்தறிவு தியானத்தின் செயல்முறை
       :link: process-of-insight-meditation/index
       :link-type: doc
@@ -33,11 +35,15 @@
 
       விபஸ்ஸனா தியானத்தின் செயல்முறை பற்றிய நூல்.
 
+      `PDF பதிவிறக்கம் <_static/pdf/pim.pdf>`_
+
    .. grid-item-card:: சொல்லாய்வு
       :link: glossary/index
       :link-type: doc
 
       சொல்லாய்வு
+
+      `PDF பதிவிறக்கம் <_static/pdf/glossary.pdf>`_
 
 .. toctree::
    :hidden:
