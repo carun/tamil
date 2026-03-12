@@ -158,11 +158,20 @@ def build_book(
     print(f"  Found {len(files)} RST files")
 
     # Preprocess and concatenate
+    # The index file (depth 0) provides the book title which is already
+    # passed via --variable title, so we strip its headings to avoid a
+    # duplicate title and to let part headings become the top-level (L1)
+    # headings in the PDF.  All other files use (depth - 1) as offset so
+    # parts map to L1 and chapters to L2.
     parts = []
     for filepath, depth in files:
         content = filepath.read_text(encoding="utf-8")
         content = preprocess_rst(content)
-        content = normalize_headings(content, depth)
+        if depth == 0:
+            # Strip all headings from the root index file
+            content = HEADING_RE.sub(lambda m: "", content)
+        else:
+            content = normalize_headings(content, depth - 1)
         parts.append(content)
 
     combined_rst = "\n\n".join(parts)

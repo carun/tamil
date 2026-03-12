@@ -43,21 +43,18 @@
     margin: margin,
     numbering: pagenumbering,
     number-align: center + bottom,
-    // Running header with book title in italics (right-aligned on even, left on odd)
-    header: context {
-      if counter(page).get().first() > 0 {
-        set text(size: 0.9em)
-        align(center)[
-          #line(length: 100%, stroke: 0.4pt)
-        ]
-      }
-    },
   )
 
-  // Body text: 10.91pt, 13.15pt leading (1.205× ratio), first-line indent
-  set par(justify: true, leading: 0.6em, first-line-indent: 1.5em)
+  // Body text: 10.91pt, 13.15pt leading (1.205× ratio)
+  set par(justify: true, leading: 0.6em)
   set text(lang: lang, region: region, font: font, size: fontsize)
   set heading(numbering: sectionnumbering)
+
+  // Highlight hyperlinks with a subtle blue color and underline
+  show link: it => {
+    set text(fill: rgb("#2155a8"))
+    underline(offset: 2pt, stroke: 0.5pt + rgb("#2155a8"), it)
+  }
 
   // Chapter headings — 17pt bold, large spacing
   show heading.where(level: 1): it => {
@@ -66,8 +63,6 @@
       #set text(size: 17.2pt, weight: "bold")
       #it.body
     ]
-    // No indent on first paragraph after heading
-    par(first-line-indent: 0pt, [])
   }
 
   // Section headings — 14.3pt bold
@@ -76,7 +71,6 @@
       #set text(size: 14.3pt, weight: "bold")
       #it.body
     ]
-    par(first-line-indent: 0pt, [])
   }
 
   // Subsection headings — 12pt bold
@@ -85,7 +79,6 @@
       #set text(size: 12pt, weight: "bold")
       #it.body
     ]
-    par(first-line-indent: 0pt, [])
   }
 
   // Title page — no page number
