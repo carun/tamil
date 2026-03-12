@@ -43,7 +43,11 @@ IAST (International Alphabet of Sanskrit Transliteration) என்பது
      - ஊக்கம்
    * - e
      - எ
-     - eka -> எக
+     - eka -> ஏக (சமஸ்கிருதத்தில் குறில் எ இல்லை)
+     - எண்ணம்
+   * - ē
+     - ஏ
+     - ēka -> ஏக
      - எண்ணம்
    * - ai
      - ஐ
@@ -51,12 +55,20 @@ IAST (International Alphabet of Sanskrit Transliteration) என்பது
      - ஐம்புலன்
    * - o
      - ஒ
-     - oṃkāra -> ஓங்கார
+     - oṃkāra -> ஓங்கார (சமஸ்கிருதத்தில் குறில் ஒ இல்லை)
      - ஒழுக்கம்
+   * - ō
+     - ஓ
+     - oṃkāra -> ஓங்கார (சமஸ்கிருதத்தில் குறில் ஒ இல்லை)
+     - ஓது
    * - au
      - ஔ
      - auṣadha -> ஔஷத
      - ஔவையார்
+   * - ah
+     - ஃ
+     - dharmah -> தர்மஃ/தர்மம்
+     - (தமிழில் பயன்பாட்டில் இல்லை)
    * - ṛ
      - ரு
      - ṛṣi -> ருஷி
@@ -66,8 +78,8 @@ IAST (International Alphabet of Sanskrit Transliteration) என்பது
      - ṝkāra -> ரூகார
      - (தமிழில் நேரடி இணை இல்லை)
    * - ḷ
-     - லு
-     - kḷpta -> க்லுப்த
+     - ல்ரு
+     - kḷpta -> க்ல்ருப்த
      - (தமிழில் நேரடி இணை இல்லை)
 
 மெய் எழுத்துகள் — க வரிசை (Gutturals / Velars)
@@ -90,7 +102,7 @@ IAST (International Alphabet of Sanskrit Transliteration) என்பது
      - khaṇḍa -> கண்ட
      - (தமிழில் வேறுபாடு இல்லை)
    * - ga
-     - க/க₂
+     - க/
      - gati -> கதி
      - (சொல் நடுவில் 'க' மெலிந்து ஒலிக்கும்)
    * - gha
@@ -264,7 +276,7 @@ IAST (International Alphabet of Sanskrit Transliteration) என்பது
    * - ḷa
      - ள
      - (பாளி/சமஸ்கிருதத்தில் இல்லை)
-     - வாழ்க்கை (தனித்துவ எழுத்து)
+     - பள்ளி (தனித்துவ எழுத்து)
    * - ṟa
      - ற
      - (பாளி/சமஸ்கிருதத்தில் இல்லை)
