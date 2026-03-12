@@ -15,7 +15,7 @@
   #block(inset: (left: 1.5em, top: -0.4em))[#it.description]
 ]
 
-#set table(inset: 6pt, stroke: none)
+#set table(inset: 6pt, stroke: 0.5pt)
 
 #show figure.where(kind: table): set figure.caption(position: top)
 #show figure.where(kind: image): set figure.caption(position: bottom)
@@ -65,8 +65,9 @@
     ]
   }
 
-  // Section headings — 14.3pt bold
+  // Section headings — 14.3pt bold, start on new page
   show heading.where(level: 2): it => {
+    pagebreak(weak: true)
     block(above: 2em, below: 1em)[
       #set text(size: 14.3pt, weight: "bold")
       #it.body
