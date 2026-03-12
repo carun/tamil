@@ -34,6 +34,7 @@ html_context = {
     "source_type": "github",
     "source_user": "carun",
     "source_repo": "tamil",
+    "source_docs_path": "/",
 }
 html_static_path = ["_static"]
 html_css_files = ["custom.css"]
