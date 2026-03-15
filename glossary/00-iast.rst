@@ -19,15 +19,15 @@ IAST (International Alphabet of Sanskrit Transliteration) என்பது
      - தமிழ் எ.கா.
    * - a
      - அ
-     - arhat -> அர்ஹத்
-     - அறம்
+     - arhant -> அர்ஹந்த்
+     - அருகன்
    * - ā
      - ஆ
      - ātman -> ஆத்மன்
      - ஆனந்தம்
    * - i
      - இ
-     - indriya -> இந்திரிய
+     - indriya -> இந்த்ரிய
      - இரக்கம்
    * - ī
      - ஈ
@@ -48,7 +48,7 @@ IAST (International Alphabet of Sanskrit Transliteration) என்பது
    * - ē
      - ஏ
      - ēka -> ஏக
-     - எண்ணம்
+     - ஏழு
    * - ai
      - ஐ
      - vaiśeṣika -> வைஷேஷிக
@@ -60,7 +60,7 @@ IAST (International Alphabet of Sanskrit Transliteration) என்பது
    * - ō
      - ஓ
      - oṃkāra -> ஓங்கார (சமஸ்கிருதத்தில் குறில் ஒ இல்லை)
-     - ஓது
+     - ஓடை
    * - au
      - ஔ
      - auṣadha -> ஔஷத
@@ -96,7 +96,7 @@ IAST (International Alphabet of Sanskrit Transliteration) என்பது
    * - ka
      - க
      - karma -> கர்ம
-     - கருணை
+     - கருமம்
    * - kha
      - க (கொடிய உச்சரிப்பு)
      - khaṇḍa -> கண்ட
@@ -111,8 +111,8 @@ IAST (International Alphabet of Sanskrit Transliteration) என்பது
      - (தமிழில் வேறுபாடு இல்லை)
    * - ṅa
      - ங
-     - aṅga -> அங்க
-     - பங்கு
+     - aṅgadha -> அங்கத
+     - அங்கதன்
 
 மெய் எழுத்துகள் — ச வரிசை (Palatals)
 ================================================
@@ -128,14 +128,14 @@ IAST (International Alphabet of Sanskrit Transliteration) என்பது
    * - ca
      - ச
      - cakra -> சக்ர
-     - சமாதி
+     - சக்கரம்
    * - cha
      - ச (கொடிய உச்சரிப்பு)
      - chanda -> சந்த
      - (தமிழில் வேறுபாடு இல்லை)
    * - ja
      - ஜ/ச
-     - jñāna/ñāna -> ஜ்ஞான/ஞான
+     - jāti
      - ஜாதி/சாதி
    * - jha
      - ஜ (வலிமையான உச்சரிப்பு)
@@ -143,7 +143,7 @@ IAST (International Alphabet of Sanskrit Transliteration) என்பது
      - (தமிழில் வேறுபாடு இல்லை)
    * - ña
      - ஞ
-     - prajñā -> பிரஜ்ஞா
+     - jñāna -> ஜ்ஞான
      - ஞானம்
 
 மெய் எழுத்துகள் — ட வரிசை (Retroflexes / Cerebrals)
@@ -227,7 +227,7 @@ IAST (International Alphabet of Sanskrit Transliteration) என்பது
      - பயிற்சி
    * - pha
      - ப (கொடிய உச்சரிப்பு)
-     - phala -> பல
+     - phala -> பலன்/பழம்
      - (தமிழில் வேறுபாடு இல்லை)
    * - ba
      - ப
@@ -239,8 +239,8 @@ IAST (International Alphabet of Sanskrit Transliteration) என்பது
      - (தமிழில் வேறுபாடு இல்லை)
    * - ma
      - ம
-     - mantra -> மந்திர
-     - மனம்
+     - mantra -> மந்த்ர
+     - மந்திரம்
 
 மெய் எழுத்துகள் — இடையின எழுத்துகள் (Semi-vowels)
 =============================================================
@@ -295,7 +295,7 @@ IAST (International Alphabet of Sanskrit Transliteration) என்பது
      - தமிழ் எ.கா.
    * - śa
      - ஷ/ச
-     - śūnya -> சூன்ய
+     - śūnya -> சூன்ய/ஷுன்ய
      - (தமிழில் 'ச' ஆகும்)
    * - ṣa
      - ஷ
