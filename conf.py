@@ -31,6 +31,9 @@ exclude_patterns = ["_build", "_templates", "README.rst", "*/README.rst", "*/TOD
 
 # -- Options for HTML output
 html_theme = "shibuya"
+html_theme_options = {
+    "discussion_url": "https://github.com/carun/tamil/discussions",
+}
 html_context = {
     "source_type": "github",
     "source_user": "carun",
