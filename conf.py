@@ -41,6 +41,8 @@ html_context = {
     "source_docs_path": "/",
 }
 html_static_path = ["_static"]
+html_favicon = "_static/dharma-wheel.png"
+html_logo = "_static/dharma-wheel.png"
 html_css_files = ["custom.css"]
 
 # -- Mermaid diagrams

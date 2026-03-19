@@ -1,0 +1,88 @@
+{%- macro render_logo(src, classname) -%}
+  {%- if src and src.startswith(('https://', 'http://')) -%}
+    <img class="{{ classname }}" src="{{ src }}" alt="{{ project }}" height="28" loading="lazy" />
+  {%- elif src -%}
+    <img class="{{ classname }}" src="{{ pathto(src, 1) }}" alt="{{ project }}" height="28" loading="lazy" />
+  {%- elif logo_url -%}
+    <img class="{{ classname }}" src="{{ logo_url }}" alt="{{ project }}" height="28" loading="lazy" />
+  {%- endif -%}
+{%- endmacro -%}
+
+<div class="sy-head">
+  <div class="sy-head-blur"></div>
+  <div class="sy-head-inner sy-container mx-auto">
+    <a class="sy-head-brand" href="{{ pathto(root_doc) }}">
+      {{ render_logo(theme_light_logo, 'light-logo') }}
+      {{ render_logo(theme_dark_logo, 'dark-logo') }}
+      <strong>{{ project }}</strong>
+    </a>
+    <span style="width:1px;height:1.2em;background:var(--sy-c-divider,#e5e7eb);display:inline-block;margin:0 0.25rem;flex-shrink:0;align-self:center;"></span>
+    <div class="sy-head-nav" id="head-nav">
+      <nav class="sy-head-links"><ul><li class="link">
+        <button type="button" id="brand-dropdown-trigger" aria-expanded="false" style="background:none;border:none;cursor:pointer;display:flex;align-items:center;gap:0.25rem;padding:0;font:inherit;color:inherit;">
+          <span>நூல்கள்</span>
+          <i class="i-lucide chevron-down" style="font-size:0.85em;opacity:0.6;margin-left:2px;"></i>
+        </button>
+      </li></ul></nav>
+      <div class="sy-head-extra flex items-center print:hidden">
+        {%- include "components/searchbox.html" -%}
+        {%- include "components/nav-versions.html" -%}
+        {%- include "components/nav-languages.html" -%}
+        {%- include "partials/nav-socials.html" -%}
+      </div>
+    </div>
+    <div class="sy-head-actions flex items-center shrink-0 print:hidden">
+      {%- include "components/theme-switch.html" -%}
+      <button class="md:hidden flex items-center js-menu" aria-label="Menu" type="button" aria-controls="head-nav" aria-expanded="false">
+        <div class="hamburger">
+          <span class="hamburger_1"></span>
+          <span class="hamburger_2"></span>
+          <span class="hamburger_3"></span>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Dropdown rendered at body level to escape header stacking context -->
+<ul id="brand-dropdown" role="menu" style="display:none;position:fixed;z-index:99999;background:var(--sy-c-background,#fff);border:1px solid var(--sy-c-divider,#e5e7eb);border-radius:0.5rem;padding:0.4rem 0;min-width:18rem;box-shadow:0 8px 24px rgba(0,0,0,0.15);list-style:none;margin:0;">
+  <li><a role="menuitem" href="{{ pathto('mastering-the-core-teachings-of-the-buddha/index') }}" style="display:block;padding:0.55rem 1.1rem;">புத்தரின் மைய போதனைகளை முழுமையாகக் கற்றறிதல்</a></li>
+  <li><a role="menuitem" href="{{ pathto('process-of-insight-meditation/index') }}" style="display:block;padding:0.55rem 1.1rem;">விபஸ்ஸனா தியானத்தின் செயல்முறை</a></li>
+  <li><a role="menuitem" href="{{ pathto('glossary/index') }}" style="display:block;padding:0.55rem 1.1rem;">சொல்லாய்வு</a></li>
+</ul>
+
+<script>
+(function () {
+  document.addEventListener('DOMContentLoaded', function () {
+    var trigger = document.getElementById('brand-dropdown-trigger');
+    var dropdown = document.getElementById('brand-dropdown');
+    if (!trigger || !dropdown) return;
+
+    // Move dropdown to body so it escapes all stacking contexts
+    document.body.appendChild(dropdown);
+
+    function openDropdown() {
+      var rect = trigger.getBoundingClientRect();
+      dropdown.style.top = (rect.bottom + 4) + 'px';
+      dropdown.style.left = rect.left + 'px';
+      dropdown.style.display = 'block';
+      trigger.setAttribute('aria-expanded', 'true');
+    }
+
+    function closeDropdown() {
+      dropdown.style.display = 'none';
+      trigger.setAttribute('aria-expanded', 'false');
+    }
+
+    trigger.addEventListener('click', function (e) {
+      e.stopPropagation();
+      dropdown.style.display === 'block' ? closeDropdown() : openDropdown();
+    });
+
+    document.addEventListener('click', closeDropdown);
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeDropdown();
+    });
+  });
+})();
+</script>
