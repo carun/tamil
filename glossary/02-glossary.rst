@@ -93,7 +93,7 @@ IAST-ல் என்ன திறுத்தம் செய்ய வேண�
     * - Enlightenment
       - ஞானத்தெளிவு/நிர்வாணம்
     * - Suffering/Dissatisfaction
-      - துக்கம்/துயரம்/துன்பம்
+      - துக்கம்/மனக்குறை/மனநிறைவாமை
     * - Information
       - தகவல்/விஷயம்
     * - Knowledge
