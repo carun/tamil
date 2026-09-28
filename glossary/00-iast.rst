@@ -390,7 +390,7 @@ IAST (International Alphabet of Sanskrit Transliteration) என்பது
      - பஞ்ஞா/பிரஜ்ஞா
      - பாளி: paññā, சமஸ்கிருதம்: prajñā
    * - Mettā
-     - மெத்தா
+     - மேத்தா
      - 'tt' -> த்த
    * - Karuṇā
      - கருணா

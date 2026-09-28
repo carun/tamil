@@ -62,30 +62,30 @@
      - தமிழ்
      - Hindi
 
-   * - Vēdanā
-     - Vēdanā
+   * - vēdanā
+     - vēdanā
      - வேதனை
-     - Vēdanā
+     - vēdanā
 
-   * - Sītā
-     - Sītā
+   * - sītā
+     - sītā
      - சீதை
-     - Sītā
+     - sītā
 
-   * - Māyā
-     - Māyā
+   * - māyā
+     - māyā
      - மாயை
-     - Māyā
+     - māyā
 
-   * - Nidrā
-     - Nidrā
+   * - nidrā
+     - nidrā
      - நித்திரை
-     - Nidrā
+     - nidrā
 
-   * - Kalā
-     - Kalā
+   * - kalā
+     - kalā
      - கலை
-     - Kalā
+     - kalā
 
 Mindfulness / தொடர்நிறைகவனம்
 =======================================
