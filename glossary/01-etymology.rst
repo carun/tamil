@@ -23,10 +23,15 @@
      - இராமன்
      - rām
 
-   * - lakshaṇa
+   * - lakṣaṇa
      - lakkaṇa
      - இலக்கணம்
-     - lakkaṇ
+     - lakṣaṇ
+
+   * - lakṣya
+     - lakkya
+     - இலக்கியம்
+     - lakṣya
 
    * - karnāṭa
      - kaṇnada
@@ -47,6 +52,7 @@
      - kāla
      - காலம்
      - kāl
+
    * - yōga
      - yōga
      - யோகம்
