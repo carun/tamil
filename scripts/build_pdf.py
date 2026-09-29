@@ -218,7 +218,8 @@ def postprocess_typst(content: str) -> str:
 
 
 def build_book(
-    book_dir: Path, title: str, author: str, output_path: Path, translator: str = ""
+    book_dir: Path, title: str, author: str, output_path: Path, translator: str = "",
+    section_numbering: str = "",
 ) -> None:
     """Build a PDF for a single book."""
     index_path = book_dir / "index.rst"
@@ -279,6 +280,8 @@ def build_book(
             "-o", str(typst_tmp),
             str(rst_tmp),
         ]
+        if section_numbering:
+            pandoc_cmd += ["--variable", f"section-numbering={section_numbering}"]
         print(f"  Running pandoc...")
         subprocess.run(pandoc_cmd, check=True, cwd=book_dir)
 
@@ -313,6 +316,9 @@ def main():
     parser.add_argument("--author", default="", help="Book author")
     parser.add_argument("--translator", default="", help="Translator name")
     parser.add_argument("--output", required=True, help="Output PDF path")
+    parser.add_argument(
+        "--section-numbering", default="", help='Typst heading numbering, e.g. "1.1"'
+    )
     args = parser.parse_args()
 
     book_dir = PROJECT_ROOT / args.book_dir
@@ -320,7 +326,10 @@ def main():
     if not output_path.is_absolute():
         output_path = PROJECT_ROOT / output_path
 
-    build_book(book_dir, args.title, args.author, output_path, args.translator)
+    build_book(
+        book_dir, args.title, args.author, output_path, args.translator,
+        args.section_numbering,
+    )
 
 
 if __name__ == "__main__":

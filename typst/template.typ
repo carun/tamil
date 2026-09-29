@@ -176,6 +176,7 @@ $if(translator)$
   translator: "$translator$",
 $endif$
   pagenumbering: $if(page-numbering)$"$page-numbering$"$else$"1"$endif$,
+  sectionnumbering: $if(section-numbering)$"$section-numbering$"$else$none$endif$,
   cols: $if(columns)$$columns$$else$1$endif$,
   doc,
 )

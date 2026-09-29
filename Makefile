@@ -47,6 +47,7 @@ pdf-glossary:
 	python3 scripts/build_pdf.py glossary \
 		--title "சொல்லாய்வு" \
 		--author "Arun Chandrasekaran" \
+		--section-numbering "1.1" \
 		--output $(BUILDDIR)/pdf/glossary.pdf
 
 clean:
