@@ -13,7 +13,7 @@
    * - :doc:`விபஸ்ஸனா தியான செயல்முறை <process-of-insight-meditation/index>`
        — *The Process of Insight Meditation* — Sayadaw Janakābhivamsa
      - `பதிவிறக்கம் <_static/pdf/pim.pdf>`_
-   * - :doc:`சொல்லாய்வு <glossary/index>`
+   * - :doc:`சொல்லாய்வு <glossary/index>` — Arun Chandrasekaran
      - `பதிவிறக்கம் <_static/pdf/glossary.pdf>`_
 
 .. toctree::
