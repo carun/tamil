@@ -1,36 +1,16 @@
-# Read the Docs configuration file for Sphinx projects
+# Read the Docs configuration file.
 # See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
+#
+# The site moved to https://tamil.arunc.dev (Cloudflare static assets, deployed
+# with scripts/deploy.sh). Read the Docs still builds on every push, but it
+# publishes only redirect stubs, so old tamil.rtfd.io links reach the same page
+# at the new address. See scripts/rtd_redirects.py.
 
-# Required
 version: 2
 
-# Set the OS, Python version and other tools you might need
 build:
   os: ubuntu-lts-latest
   tools:
-    python: '3.12'
-  apt_packages:
-    - unzip
-  jobs:
-    pre_build:
-      # Install pandoc 3.x (apt version is too old, lacks Typst support)
-      - curl -sL https://github.com/jgm/pandoc/releases/download/3.9/pandoc-3.9-linux-amd64.tar.gz | tar xz --strip-components=2 -C /tmp
-      # Install typst
-      - curl -sL https://github.com/typst/typst/releases/latest/download/typst-x86_64-unknown-linux-musl.tar.xz | tar xJ --strip-components=1 -C /tmp
-      # Download fonts
-      - mkdir -p fonts
-      - curl -sL "https://github.com/notofonts/tamil/releases/download/NotoSansTamil-v2.004/NotoSansTamil-v2.004.zip" -o /tmp/tamil.zip && unzip -jo /tmp/tamil.zip "NotoSansTamil/unhinted/ttf/*.ttf" -d fonts/
-      - curl -sL "https://github.com/notofonts/latin-greek-cyrillic/releases/download/NotoSans-v2.015/NotoSans-v2.015.zip" -o /tmp/sans.zip && unzip -jo /tmp/sans.zip "NotoSans/unhinted/ttf/NotoSans-Regular.ttf" "NotoSans/unhinted/ttf/NotoSans-Bold.ttf" -d fonts/
-    post_build:
-      # Build PDFs and copy into HTML output
-      - PATH="/tmp:$PATH" make pdf
-      - mkdir -p $READTHEDOCS_OUTPUT/html/_static/pdf
-      - cp _build/pdf/*.pdf $READTHEDOCS_OUTPUT/html/_static/pdf/
-
-python:
-  install:
-    - requirements: requirements.txt
-
-# Build documentation with Sphinx
-sphinx:
-  configuration: conf.py
+    python: "3.12"
+  commands:
+    - python3 scripts/rtd_redirects.py "$READTHEDOCS_OUTPUT/html"

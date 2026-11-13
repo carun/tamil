@@ -1,0 +1,19 @@
+// Serves https://tamil.arunc.dev as Cloudflare static assets, like
+// kural.arunc.dev. Deploy with scripts/deploy.sh, which builds into
+// _build/dirhtml and runs `wrangler deploy`. The custom_domain route makes
+// wrangler create the DNS record and certificate for tamil.arunc.dev.
+{
+  "name": "tamil",
+  // Pins wrangler to the carun@protonmail.com Cloudflare account, so any other
+  // login stops with an authentication error instead of deploying there. The
+  // account ID is not a secret.
+  "account_id": "117571a6c416f079cf23454a89c921b0",
+  "compatibility_date": "2026-11-01",
+  "workers_dev": false,
+  "routes": [{ "pattern": "tamil.arunc.dev", "custom_domain": true }],
+  "assets": {
+    "directory": "./_build/dirhtml",
+    // Serves _extra/404.html (copied to the output root) with a 404 status.
+    "not_found_handling": "404-page"
+  }
+}

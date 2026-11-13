@@ -10,3 +10,4 @@ dist/
 .kate-swp
 *.kate-swp
 fonts/
+.wrangler/
