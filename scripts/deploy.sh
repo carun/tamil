@@ -4,8 +4,9 @@
 # kural.arunc.dev) to https://tamil.arunc.dev.
 #
 # Uncommitted edits are never published: commit to put them live. Pushing to
-# GitHub does NOT deploy. To preview locally, run `make html` and open
-# _build/html/index.html.
+# main runs this script in GitHub Actions (.github/workflows/deploy.yml), so a
+# manual run is only needed to deploy without pushing. To preview locally, run
+# `make html` and open _build/html/index.html.
 #
 # The deployed site uses Sphinx's dirhtml builder (chapter-1/index.html, linked
 # as chapter-1/) rather than `make html` (chapter-1.html): Cloudflare
