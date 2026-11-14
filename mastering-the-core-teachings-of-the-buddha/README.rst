@@ -6,4 +6,4 @@ by `Dr. Daniel M. Ingram <https://www.integrateddaniel.info/>`_.
 - All the credits, copyrights and attributions of this work, related translations, etc belong to `Dr. Daniel M. Ingram <https://www.integrateddaniel.info/>`_
 - Follow `Dr. Daniel Ingram on Twitter <https://twitter.com/danielmingram?ref_src=twsrc%5Etfw>`_
 
-Read the Tamil version at `mctb.rtfd.io <https://mctb.rtfd.io>`_.
+Read the Tamil version at `tamil.arunc.dev <https://tamil.arunc.dev/mastering-the-core-teachings-of-the-buddha/>`_.

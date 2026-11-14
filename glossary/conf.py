@@ -1,6 +1,6 @@
 # Configuration file for the Sphinx documentation builder.
 # This conf.py is for standalone local builds of this book only.
-# ReadTheDocs uses the top-level conf.py.
+# The site at tamil.arunc.dev is built from the top-level conf.py.
 
 # -- Project information
 
